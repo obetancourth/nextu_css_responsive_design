@@ -9,6 +9,15 @@
       .galeria{
         padding: 1em 0.5em;
       }
+      .galeria div:first-child picture img{
+        filter: blur(10px);
+      }
+      .galeria div:nth-child(2n) picture img{
+        filter: grayscale(100%);
+      }
+      .galeria div:nth-child(3) picture img{
+        filter: sepia(90%);
+      }
       @media (min-width:900px){
         .galeria{
           display: flex;

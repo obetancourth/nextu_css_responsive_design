@@ -5,6 +5,31 @@
     <title>Comenzando con Retratos</title>
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
+    <style>
+      .galeria{
+        padding: 1em 0.5em;
+      }
+      .galeria div:first-child picture img{
+        filter: blur(10px);
+      }
+      .galeria div:nth-child(2n) picture img{
+        filter: grayscale(100%);
+      }
+      .galeria div:nth-child(3) picture img{
+        filter: sepia(90%);
+      }
+      @media (min-width:900px){
+        .galeria{
+          display: flex;
+          align-items: flex-start;
+          justify-content: center;
+          flex-wrap: wrap;
+        }
+        .galeria div{
+          width:30%;
+        }
+      }
+    </style>
   </head>
   <body>
       <header>
@@ -25,7 +50,44 @@
       </header>
       <div id="contenido">
         <main>
-
+          <section class="galeria">
+            <div>
+              <picture class="paisajes">
+                <source media="(max-width: 900px)" srcset="imgs/portrait_mbl.jpg">
+                <img src="imgs/portrait_dsk.jpg" alt="Comenzando con Paisajes">
+              </picture>
+            </div>
+            <div>
+              <picture class="paisajes">
+                <source media="(max-width: 900px)" srcset="imgs/portrait_mbl.jpg">
+                <img src="imgs/portrait_dsk.jpg" alt="Comenzando con Paisajes">
+              </picture>
+            </div>
+            <div>
+              <picture class="paisajes">
+                <source media="(max-width: 900px)" srcset="imgs/portrait_mbl.jpg">
+                <img src="imgs/portrait_dsk.jpg" alt="Comenzando con Paisajes">
+              </picture>
+            </div>
+            <div>
+              <picture class="paisajes">
+                <source media="(max-width: 900px)" srcset="imgs/portrait_mbl.jpg">
+                <img src="imgs/portrait_dsk.jpg" alt="Comenzando con Paisajes">
+              </picture>
+            </div>
+            <div>
+              <picture class="paisajes">
+                <source media="(max-width: 900px)" srcset="imgs/portrait_mbl.jpg">
+                <img src="imgs/portrait_dsk.jpg" alt="Comenzando con Paisajes">
+              </picture>
+            </div>
+            <div>
+              <picture class="paisajes">
+                <source media="(max-width: 900px)" srcset="imgs/portrait_mbl.jpg">
+                <img src="imgs/portrait_dsk.jpg" alt="Comenzando con Paisajes">
+              </picture>
+            </div>
+          </section>
         </main>
       </div>
       <footer>
