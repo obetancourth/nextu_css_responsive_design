@@ -1,0 +1,34 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Dancing Script', cursive;
+  background-color: #02010a;
+}
+
+#contenido {
+  width:100%;
+}
+header {
+  background-color: #5b7989;
+  color:#FFF;
+  border-radius: 10px 10px 0px 0px;
+}
+
+
+
+footer {
+  padding:0.5em 1em;
+  background-color: #C6d5c5;
+  border-radius: 0px 0px 10px 10px;
+}
+footer img {
+  width:21px;
+}
+
+@media (min-width:900px){
+  #contenido {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+}
