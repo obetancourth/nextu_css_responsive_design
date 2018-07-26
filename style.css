@@ -5,7 +5,9 @@ body {
   font-family: 'Dancing Script', cursive;
   background-color: #02010a;
 }
-
+a {
+  color:#000;
+}
 #contenido, header, footer {
   width:100%;
 }
@@ -18,7 +20,9 @@ header {
   text-align: center;
   animation: slidein 1s;
 }
-
+header h1{
+  text-shadow: 2px 2px 2px #02010a;
+}
 header nav ul {
   width:100%;
   text-align: center;
@@ -30,13 +34,23 @@ header nav ul li {
 }
 header nav ul li a, header nav ul li span{
   display: inline-block;
-  padding: 0.5em 1.5em;
-  min-width: 30%;
+  padding: 1em;
+  width: 30%;
   text-align: center;
   color:#fff;
   font-size: 1.5em;
 }
-
+picture{
+  display: block;
+  margin:1em auto;
+  width:90%;
+}
+picture img{
+  width:100%;
+  margin:0px;
+  padding: 0px;
+  box-shadow: 2px 2px 2px #02010a;
+}
 main{
   background-color:  #d5c75f;
 }
@@ -69,7 +83,7 @@ footer a{
   header nav{
     position: absolute;
     right:1em;
-    top:1.2em;
+    top:0.4em;
     width: 400px;
   }
   header nav ul{

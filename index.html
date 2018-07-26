@@ -5,6 +5,49 @@
     <title>Comenzando con la Fotografía</title>
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
+    <style>
+      .imgcentral{
+        background-color: #82c3a6;
+        overflow: auto;
+      }
+      .imgsecundaria{
+        background-color: #d5c75f;
+        padding-bottom: 1em;
+      }
+      .imgsecundaria div{
+        text-align: center;
+      }
+      .paisajes img, .retratos img{
+        border: 1px solid #000;
+      }
+      .paisajes, .retratos, .paisajes img, .retratos img{
+        transition: transform 0.5s, box-shadow 0.5s, border-width 0.3s;
+      }
+
+      .paisajes:hover {
+        transform: rotate(10deg);
+      }
+      .retratos:hover {
+        transform: translate(20px,-5px);
+      }
+      .paisajes:hover img, .retratos:hover img{
+          box-shadow: 2px 2px 2px #82c3a6;
+          border-width: 2px;
+      }
+
+      @media(min-width:900px){
+        .imgsecundaria{
+          overflow: auto;
+          clear:both;
+        }
+        .imgsecundaria div{
+          float:left;
+          padding:1em;
+          width:50%;
+        }
+      }
+
+    </style>
   </head>
   <body>
       <header>
@@ -26,9 +69,29 @@
       <div id="contenido">
         <main>
           <section class="imgcentral">
-
+            <picture>
+              <source media="(max-width: 900px)" srcset="imgs/centerimg_mbl.jpg">
+              <img src="imgs/centerimg_dsk.jpg" alt="Comenzando con Fotografía">
+            </picture>
           </section>
-
+          <section class="imgsecundaria">
+            <div>
+              <a href="paisajes.html">
+              <picture class="paisajes">
+                <source media="(max-width: 900px)" srcset="imgs/landscape_mbl.jpg">
+                <img src="imgs/landscape_dsk.jpg" alt="Comenzando con Paisajes">
+              </picture>
+              Paisajes</a>
+            </div>
+            <div>
+              <a href="retratos.html">
+              <picture class="retratos">
+                <source media="(max-width: 900px)" srcset="imgs/portrait_mbl.jpg">
+                <img src="imgs/portrait_dsk.jpg" alt="Comenzando con Retratos">
+              </picture>
+              Retratos</a>
+            </div>
+          </section>
         </main>
       </div>
       <footer>
