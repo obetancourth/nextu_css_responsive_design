@@ -13,9 +13,31 @@ header {
   background-color: #5b7989;
   color:#FFF;
   border-radius: 10px 10px 0px 0px;
+  padding: 1em;
+  text-align: center;
 }
 
+header nav ul {
+  width:100%;
+  text-align: center;
+  list-style: none;
+  padding: 0px;
+}
+header nav ul li {
+  display: inline;
+}
+header nav ul li a, header nav ul li span{
+  display: inline-block;
+  padding: 0.5em 1.5em;
+  min-width: 30%;
+  text-align: center;
+  color:#fff;
+  font-size: 1.5em;
+}
 
+main{
+  background-color:  #d5c75f;
+}
 
 footer {
   padding:0.5em 1em;
@@ -25,10 +47,41 @@ footer {
 footer img {
   width:21px;
 }
+footer a{
+  text-decoration: none;
+  color:#000;
+  vertical-align: middle;
+
+}
 
 @media (min-width:900px){
+  header{
+    text-align: left;
+    position: relative;
+  }
+  header nav{
+    position: absolute;
+    right:1em;
+    top:1.2em;
+    width: 400px;
+  }
+  header nav ul{
+    width:400px;
+  }
+  header nav ul li a, header nav ul li span{
+    width:100px;
+  }
   #contenido {
     max-width: 900px;
     margin: 0 auto;
+  }
+  footer{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding-bottom: 1em;
+  }
+  footer section {
+    width:22%;
   }
 }
